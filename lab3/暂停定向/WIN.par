@@ -1,0 +1,244 @@
+Release 13.4 par O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-171OUNI::  Tue Dec 25 12:37:33 2018
+
+par -w -intstyle ise -ol high -mt off WIN_map.ncd WIN.ncd WIN.pcf 
+
+
+Constraints file: WIN.pcf.
+Loading device for application Rf_Device from file '6slx16.nph' in environment F:\Xilinx\ISE_DS\ISE\.
+   "WIN" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.21 2012-01-07".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,461 out of  18,224    8%
+    Number used as Flip Flops:               1,460
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,518 out of   9,112   16%
+    Number used as logic:                      915 out of   9,112   10%
+      Number using O6 output only:             783
+      Number using O5 output only:              48
+      Number using O5 and O6:                   84
+      Number used as ROM:                        0
+    Number used as Memory:                     410 out of   2,176   18%
+      Number used as Dual Port RAM:            108
+        Number using O6 output only:            64
+        Number using O5 output only:             0
+        Number using O5 and O6:                 44
+      Number used as Single Port RAM:           64
+        Number using O6 output only:            64
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:           238
+        Number using O6 output only:           157
+        Number using O5 output only:             1
+        Number using O5 and O6:                 80
+    Number used exclusively as route-thrus:    193
+      Number with same-slice register load:    186
+      Number with same-slice carry load:         7
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   549 out of   2,278   24%
+  Nummber of MUXCYs used:                      276 out of   4,556    6%
+  Number of LUT Flip Flop pairs used:        1,824
+    Number with an unused Flip Flop:           653 out of   1,824   35%
+    Number with an unused LUT:                 306 out of   1,824   16%
+    Number of fully used LUT-FF pairs:         865 out of   1,824   47%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  18,224    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         5 out of     232    2%
+    Number of LOCed IOBs:                        5 out of       5  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        10 out of      32   31%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
+
+WARNING:Par:288 - The signal rf/Mram_registers11_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers2_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers12_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers4_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers3_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers13_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers15_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers6_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers14_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal rf/Mram_registers5_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 10346 unrouted;      REAL time: 4 secs 
+
+Phase  2  : 7850 unrouted;      REAL time: 5 secs 
+
+Phase  3  : 2810 unrouted;      REAL time: 10 secs 
+
+Phase  4  : 2810 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+
+Updating file: WIN.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+Total REAL time to Router completion: 15 secs 
+Total CPU time to Router completion: 15 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clc_BUFGP | BUFGMUX_X3Y13| No   |  376 |  0.066     |  0.912      |
++---------------------+--------------+------+------+------------+-------------+
+|    icon_control0<0> |  BUFGMUX_X2Y3| No   |   89 |  0.058     |  0.911      |
++---------------------+--------------+------+------+------------+-------------+
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  1.034      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.451      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.936ns|     3.064ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.119ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.049ns|     0.951ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.491ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    20.636ns|     9.364ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.232ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_Clk = PERIOD TIMEGRP "sys_clk" 10 MHz  | SETUP       |    42.099ns|    15.802ns|       0|           0
+  HIGH 50%                                  | HOLD        |     0.205ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     3.929ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_path" TIG               | MAXDELAY    |         N/A|     3.278ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     6.034ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.960ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 16 secs 
+Total CPU time to PAR completion: 17 secs 
+
+Peak Memory Usage:  325 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 12
+Number of info messages: 0
+
+Writing design to file WIN.ncd
+
+
+
+PAR done!

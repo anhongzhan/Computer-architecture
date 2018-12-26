@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/CPU_3/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/test/npc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/immediate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immediate[15:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/MEM_Data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MEM_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/MDR_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDR_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDR_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/wb/alu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/wb/MDR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/wb/ALUM2Reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUM2Reg</obj_property>
+      <obj_property name="ObjectShortName">ALUM2Reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/wb/DATA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[31:0]</obj_property>
+   </wvobject>
+</wave_config>

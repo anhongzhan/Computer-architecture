@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/CPU_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CPU_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/CPU_test/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/ReadData1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/immediate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/ReadData2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/ALUSrcB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/alu/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+</wave_config>

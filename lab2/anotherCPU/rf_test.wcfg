@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/rf_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="rf_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/rf_test/ReadData1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/ReadData2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/RegWire" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWire</obj_property>
+      <obj_property name="ObjectShortName">RegWire</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/RegOut" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOut</obj_property>
+      <obj_property name="ObjectShortName">RegOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/rs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/rt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/ALUM2Reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUM2Reg</obj_property>
+      <obj_property name="ObjectShortName">ALUM2Reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/Data_From_ALU" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data_From_ALU[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_From_ALU[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rf_test/Data_From_MDR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data_From_MDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_From_MDR[31:0]</obj_property>
+   </wvobject>
+</wave_config>

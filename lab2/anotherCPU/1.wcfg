@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/CPU_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CPU_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/CPU_test/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/RegOut" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOut</obj_property>
+      <obj_property name="ObjectShortName">RegOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/RegWire" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWire</obj_property>
+      <obj_property name="ObjectShortName">RegWire</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/ALUM2Reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUM2Reg</obj_property>
+      <obj_property name="ObjectShortName">ALUM2Reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/rs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/rt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/Data_From_ALU" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data_From_ALU[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_From_ALU[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/Data_From_MDR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data_From_MDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_From_MDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/ReadReg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadReg1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadReg1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/ReadReg2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadReg2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadReg2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/WriteReg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteReg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteReg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/WriteData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/ReadData1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/ReadData2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/register" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">register[0:31,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[0:31,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/rf/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/ca/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/ca/cclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cclk</obj_property>
+      <obj_property name="ObjectShortName">cclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/ca/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i[3:0]</obj_property>
+   </wvobject>
+</wave_config>

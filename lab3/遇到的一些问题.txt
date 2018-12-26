@@ -1,0 +1,20 @@
+Map:116 - The design is empty.  No processing will be done.
+主模块没有输出
+
+ERROR:Simulator:793 - Unable to elaborate instantiated module EX_MEM
+主模块中调用EX_MEM时
+EX_MEM(cclk, EX_opcode, aluresult_in, ReadData1_out, 
+						MEM_opcode, aluresult_out, MEM_Data, MDRW);
+应该是
+EX_MEM ex_mem(cclk, EX_opcode, aluresult_in, ReadData1_out, 
+						MEM_opcode, aluresult_out, MEM_Data, MDRW);
+
+
+
+ERROR:ChipScope: One or more invalid signal connections detected.
+ERROR:ChipScope: Double-click the cpu2.cdc icon in the sources window to edit and fix the CDC project.
+cdc文件里面检测的内容被改变，回去检查cdc文件
+
+:NgdBuild:924 - input pad net 'clk' is driving non-buffer primitives:
+     pin C on block
+cdc文件里面clk可能选错了

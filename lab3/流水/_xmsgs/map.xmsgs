@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O</arg> has no load.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem2&quot; (output signal=IR_24_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000002280808</arg> to <arg fmt="%s" index="3">000000000AA00000</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem3&quot; (output signal=IR_25_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000080000880</arg> to <arg fmt="%s" index="3">0000000000000000</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem4&quot; (output signal=IR_26_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000000088000</arg> to <arg fmt="%s" index="3">0000000000000000</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem5&quot; (output signal=IR_27_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000094011111</arg> to <arg fmt="%s" index="3">0000000050055555</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem7&quot; (output signal=IR_29_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000022020202</arg> to <arg fmt="%s" index="3">00000000AA0A0A0A</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem8&quot; (output signal=IR_30_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000000000220</arg> to <arg fmt="%s" index="3">0000000000000AA0</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="MapLib" num="825" delta="old" ><arg fmt="%s" index="1">RAM64X1D symbol &quot;mar/Mram_mem9&quot; (output signal=IR_31_OBUF)</arg> INITSTATE has been changed from <arg fmt="%s" index="2">0000000002222000</arg> to <arg fmt="%s" index="3">000000000AAAA000</arg> because <arg fmt="%s" index="4">pin A1 is</arg> driven by GND. <arg fmt="%s" index="5">This pin has</arg> been connected to VCC instead, in order to relieve routing congestion.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="warning" file="Place" num="837" delta="old" >Partially locked IO Bus is found. 
+<arg fmt="%s" index="1"> Following components of the bus are not locked: 
+	 Comp: npc&lt;31&gt;
+	 Comp: npc&lt;30&gt;
+	 Comp: npc&lt;29&gt;
+	 Comp: npc&lt;28&gt;
+	 Comp: npc&lt;27&gt;
+	 Comp: npc&lt;26&gt;
+	 Comp: npc&lt;25&gt;
+	 Comp: npc&lt;24&gt;
+	 Comp: npc&lt;23&gt;
+	 Comp: npc&lt;22&gt;
+	 Comp: npc&lt;21&gt;
+	 Comp: npc&lt;20&gt;
+	 Comp: npc&lt;19&gt;
+	 Comp: npc&lt;18&gt;
+	 Comp: npc&lt;17&gt;
+	 Comp: npc&lt;16&gt;
+	 Comp: npc&lt;15&gt;
+	 Comp: npc&lt;14&gt;
+	 Comp: npc&lt;13&gt;
+	 Comp: npc&lt;12&gt;
+	 Comp: npc&lt;11&gt;
+	 Comp: npc&lt;10&gt;
+	 Comp: npc&lt;9&gt;
+	 Comp: npc&lt;8&gt;
+	 Comp: npc&lt;7&gt;
+	 Comp: npc&lt;6&gt;
+	 Comp: npc&lt;5&gt;
+	 Comp: npc&lt;4&gt;
+	 Comp: npc&lt;3&gt;
+	 Comp: npc&lt;2&gt;
+	 Comp: npc&lt;1&gt;
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="838" delta="old" >An IO Bus with more than one IO standard is found.
+<arg fmt="%s" index="1">Components associated with this bus are as follows: 
+	 Comp: npc&lt;0&gt;   IOSTANDARD = LVCMOS33
+	 Comp: npc&lt;1&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;2&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;3&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;4&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;5&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;6&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;7&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;8&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;9&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;10&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;11&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;12&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;13&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;14&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;15&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;16&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;17&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;18&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;19&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;20&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;21&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;22&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;23&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;24&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;25&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;26&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;27&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;28&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;29&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;30&gt;   IOSTANDARD = LVCMOS25
+	 Comp: npc&lt;31&gt;   IOSTANDARD = LVCMOS25
+
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="837" delta="old" >Partially locked IO Bus is found. 
+<arg fmt="%s" index="1"> Following components of the bus are not locked: 
+	 Comp: immediate&lt;15&gt;
+	 Comp: immediate&lt;14&gt;
+	 Comp: immediate&lt;13&gt;
+	 Comp: immediate&lt;12&gt;
+	 Comp: immediate&lt;11&gt;
+	 Comp: immediate&lt;10&gt;
+	 Comp: immediate&lt;9&gt;
+	 Comp: immediate&lt;8&gt;
+	 Comp: immediate&lt;7&gt;
+	 Comp: immediate&lt;6&gt;
+	 Comp: immediate&lt;5&gt;
+	 Comp: immediate&lt;4&gt;
+	 Comp: immediate&lt;3&gt;
+	 Comp: immediate&lt;2&gt;
+	 Comp: immediate&lt;1&gt;
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="838" delta="old" >An IO Bus with more than one IO standard is found.
+<arg fmt="%s" index="1">Components associated with this bus are as follows: 
+	 Comp: immediate&lt;0&gt;   IOSTANDARD = LVCMOS33
+	 Comp: immediate&lt;1&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;2&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;3&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;4&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;5&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;6&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;7&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;8&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;9&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;10&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;11&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;12&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;13&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;14&gt;   IOSTANDARD = LVCMOS25
+	 Comp: immediate&lt;15&gt;   IOSTANDARD = LVCMOS25
+
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="837" delta="old" >Partially locked IO Bus is found. 
+<arg fmt="%s" index="1"> Following components of the bus are not locked: 
+	 Comp: IR&lt;31&gt;
+	 Comp: IR&lt;30&gt;
+	 Comp: IR&lt;29&gt;
+	 Comp: IR&lt;28&gt;
+	 Comp: IR&lt;27&gt;
+	 Comp: IR&lt;26&gt;
+	 Comp: IR&lt;25&gt;
+	 Comp: IR&lt;24&gt;
+	 Comp: IR&lt;23&gt;
+	 Comp: IR&lt;22&gt;
+	 Comp: IR&lt;21&gt;
+	 Comp: IR&lt;20&gt;
+	 Comp: IR&lt;19&gt;
+	 Comp: IR&lt;18&gt;
+	 Comp: IR&lt;17&gt;
+	 Comp: IR&lt;16&gt;
+	 Comp: IR&lt;15&gt;
+	 Comp: IR&lt;14&gt;
+	 Comp: IR&lt;13&gt;
+	 Comp: IR&lt;12&gt;
+	 Comp: IR&lt;11&gt;
+	 Comp: IR&lt;10&gt;
+	 Comp: IR&lt;9&gt;
+	 Comp: IR&lt;8&gt;
+	 Comp: IR&lt;7&gt;
+	 Comp: IR&lt;6&gt;
+	 Comp: IR&lt;5&gt;
+	 Comp: IR&lt;4&gt;
+	 Comp: IR&lt;3&gt;
+	 Comp: IR&lt;2&gt;
+	 Comp: IR&lt;1&gt;
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="838" delta="old" >An IO Bus with more than one IO standard is found.
+<arg fmt="%s" index="1">Components associated with this bus are as follows: 
+	 Comp: IR&lt;0&gt;   IOSTANDARD = LVCMOS33
+	 Comp: IR&lt;1&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;2&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;3&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;4&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;5&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;6&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;7&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;8&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;9&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;10&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;11&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;12&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;13&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;14&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;15&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;16&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;17&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;18&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;19&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;20&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;21&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;22&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;23&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;24&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;25&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;26&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;27&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;28&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;29&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;30&gt;   IOSTANDARD = LVCMOS25
+	 Comp: IR&lt;31&gt;   IOSTANDARD = LVCMOS25
+
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="837" delta="old" >Partially locked IO Bus is found. 
+<arg fmt="%s" index="1"> Following components of the bus are not locked: 
+	 Comp: MEM_Data&lt;31&gt;
+	 Comp: MEM_Data&lt;30&gt;
+	 Comp: MEM_Data&lt;29&gt;
+	 Comp: MEM_Data&lt;28&gt;
+	 Comp: MEM_Data&lt;27&gt;
+	 Comp: MEM_Data&lt;26&gt;
+	 Comp: MEM_Data&lt;25&gt;
+	 Comp: MEM_Data&lt;24&gt;
+	 Comp: MEM_Data&lt;23&gt;
+	 Comp: MEM_Data&lt;22&gt;
+	 Comp: MEM_Data&lt;21&gt;
+	 Comp: MEM_Data&lt;20&gt;
+	 Comp: MEM_Data&lt;19&gt;
+	 Comp: MEM_Data&lt;18&gt;
+	 Comp: MEM_Data&lt;17&gt;
+	 Comp: MEM_Data&lt;16&gt;
+	 Comp: MEM_Data&lt;15&gt;
+	 Comp: MEM_Data&lt;14&gt;
+	 Comp: MEM_Data&lt;13&gt;
+	 Comp: MEM_Data&lt;12&gt;
+	 Comp: MEM_Data&lt;11&gt;
+	 Comp: MEM_Data&lt;10&gt;
+	 Comp: MEM_Data&lt;9&gt;
+	 Comp: MEM_Data&lt;8&gt;
+	 Comp: MEM_Data&lt;7&gt;
+	 Comp: MEM_Data&lt;6&gt;
+	 Comp: MEM_Data&lt;5&gt;
+	 Comp: MEM_Data&lt;4&gt;
+	 Comp: MEM_Data&lt;3&gt;
+	 Comp: MEM_Data&lt;2&gt;
+	 Comp: MEM_Data&lt;1&gt;
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="838" delta="old" >An IO Bus with more than one IO standard is found.
+<arg fmt="%s" index="1">Components associated with this bus are as follows: 
+	 Comp: MEM_Data&lt;0&gt;   IOSTANDARD = LVCMOS33
+	 Comp: MEM_Data&lt;1&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;2&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;3&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;4&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;5&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;6&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;7&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;8&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;9&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;10&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;11&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;12&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;13&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;14&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;15&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;16&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;17&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;18&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;19&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;20&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;21&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;22&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;23&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;24&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;25&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;26&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;27&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;28&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;29&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;30&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MEM_Data&lt;31&gt;   IOSTANDARD = LVCMOS25
+
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="837" delta="old" >Partially locked IO Bus is found. 
+<arg fmt="%s" index="1"> Following components of the bus are not locked: 
+	 Comp: MDR_out&lt;31&gt;
+	 Comp: MDR_out&lt;30&gt;
+	 Comp: MDR_out&lt;29&gt;
+	 Comp: MDR_out&lt;28&gt;
+	 Comp: MDR_out&lt;27&gt;
+	 Comp: MDR_out&lt;26&gt;
+	 Comp: MDR_out&lt;25&gt;
+	 Comp: MDR_out&lt;24&gt;
+	 Comp: MDR_out&lt;23&gt;
+	 Comp: MDR_out&lt;22&gt;
+	 Comp: MDR_out&lt;21&gt;
+	 Comp: MDR_out&lt;20&gt;
+	 Comp: MDR_out&lt;19&gt;
+	 Comp: MDR_out&lt;18&gt;
+	 Comp: MDR_out&lt;17&gt;
+	 Comp: MDR_out&lt;16&gt;
+	 Comp: MDR_out&lt;15&gt;
+	 Comp: MDR_out&lt;14&gt;
+	 Comp: MDR_out&lt;13&gt;
+	 Comp: MDR_out&lt;12&gt;
+	 Comp: MDR_out&lt;11&gt;
+	 Comp: MDR_out&lt;10&gt;
+	 Comp: MDR_out&lt;9&gt;
+	 Comp: MDR_out&lt;8&gt;
+	 Comp: MDR_out&lt;7&gt;
+	 Comp: MDR_out&lt;6&gt;
+	 Comp: MDR_out&lt;5&gt;
+	 Comp: MDR_out&lt;4&gt;
+	 Comp: MDR_out&lt;3&gt;
+	 Comp: MDR_out&lt;2&gt;
+	 Comp: MDR_out&lt;1&gt;
+</arg>
+</msg>
+
+<msg type="warning" file="Place" num="838" delta="old" >An IO Bus with more than one IO standard is found.
+<arg fmt="%s" index="1">Components associated with this bus are as follows: 
+	 Comp: MDR_out&lt;0&gt;   IOSTANDARD = LVCMOS33
+	 Comp: MDR_out&lt;1&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;2&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;3&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;4&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;5&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;6&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;7&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;8&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;9&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;10&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;11&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;12&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;13&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;14&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;15&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;16&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;17&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;18&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;19&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;20&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;21&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;22&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;23&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;24&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;25&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;26&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;27&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;28&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;29&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;30&gt;   IOSTANDARD = LVCMOS25
+	 Comp: MDR_out&lt;31&gt;   IOSTANDARD = LVCMOS25
+
+</arg>
+</msg>
+
+<msg type="info" file="Place" num="834" delta="old" >Only a subset of IOs are locked. Out of <arg fmt="%d" index="1">177</arg> IOs, <arg fmt="%d" index="2">6</arg> are locked and <arg fmt="%d" index="3">171</arg> are not locked. <arg fmt="%s" index="4">If you would like to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1.</arg> 
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">MDR_out&lt;0&gt;_PULLDOWN</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">IR&lt;0&gt;_PULLDOWN</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">immediate&lt;0&gt;_PULLDOWN</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">MEM_Data&lt;0&gt;_PULLDOWN</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2410" delta="old" >This design is using one or more 9K Block RAMs (RAMB8BWER).  9K Block RAM initialization data, both user defined and default, may be incorrect and should not be used.  For more information, please reference Xilinx Answer Record 39999.
+</msg>
+
+</messages>
+

@@ -1,0 +1,4 @@
+NET	"clk"	LOC="V10"	|IOSTANDARD=LVCMOS33;
+
+Net clk TNM_NET = sys_clk;
+TIMESPEC TS_Clk = PERIOD "clk" 100000 KHz;

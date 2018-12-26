@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/CU_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CU_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/CU_test/PCSrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCSrc</obj_property>
+      <obj_property name="ObjectShortName">PCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/MDRW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MDRW</obj_property>
+      <obj_property name="ObjectShortName">MDRW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/ALUM2Reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUM2Reg</obj_property>
+      <obj_property name="ObjectShortName">ALUM2Reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/ALUSrcB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/RegWire" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWire</obj_property>
+      <obj_property name="ObjectShortName">RegWire</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/RegOut" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOut</obj_property>
+      <obj_property name="ObjectShortName">RegOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/Jmp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Jmp</obj_property>
+      <obj_property name="ObjectShortName">Jmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CU_test/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+</wave_config>

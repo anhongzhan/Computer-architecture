@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/CPU_5/bo_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bo" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/bo/clc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clc</obj_property>
+      <obj_property name="ObjectShortName">clc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/pc/PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/c/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/alu/A" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="label">SrcA</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/alu/B" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="label">SrcB</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/alu/result" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="label">ALUOut(Memory)</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/data1" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[31:0]</obj_property>
+      <obj_property name="label">SrcRegAE</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/data2" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[31:0]</obj_property>
+      <obj_property name="label">SrcRegBE</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/WriteData" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      <obj_property name="label">ALUOut(Write)</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/datamemoey/memoryValue" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">memoryValue[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memoryValue[31:0]</obj_property>
+      <obj_property name="label">DMemReadData</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[1]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[1,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[1,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[2]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[2,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[2,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[3]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[3,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[3,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[4]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[4,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[4,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[5]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[5,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[5,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[6]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[6,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[6,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[9]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[9,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[9,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[10]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[10,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[10,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[11]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[11,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[11,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bo/uut/rf/registers[12]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[12,31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[12,31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

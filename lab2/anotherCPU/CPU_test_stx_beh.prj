@@ -1,0 +1,2 @@
+verilog isim_temp "CPU_test.v"
+verilog isim_temp "F:/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"

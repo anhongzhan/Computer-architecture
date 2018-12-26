@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/PC_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="PC_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/PC_test/immediate_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immediate_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_test/immediate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_test/PCSrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCSrc</obj_property>
+      <obj_property name="ObjectShortName">PCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_test/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_test/npc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_test/Jmp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Jmp</obj_property>
+      <obj_property name="ObjectShortName">Jmp</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/mdr_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mdr_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/mdr_test/DataOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mdr_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mdr_test/DAddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mdr_test/DataIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mdr_test/MDRW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MDRW</obj_property>
+      <obj_property name="ObjectShortName">MDRW</obj_property>
+   </wvobject>
+</wave_config>

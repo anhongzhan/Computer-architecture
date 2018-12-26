@@ -1,0 +1,670 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+F:\Xilinx\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf
+
+Design file:              alu.ncd
+Physical constraint file: alu.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.21 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Card<0>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<0>        |    7.005(F)|      SLOW  |    2.002(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<1>        |    6.245(F)|      SLOW  |    2.222(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<2>        |    6.191(F)|      SLOW  |    2.113(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<3>        |    6.350(F)|      SLOW  |    2.131(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<4>        |    5.808(F)|      SLOW  |    2.585(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<5>        |    5.891(F)|      SLOW  |    2.418(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<6>        |    5.702(F)|      SLOW  |    2.096(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<7>        |    5.700(F)|      SLOW  |    2.157(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<8>        |    5.620(F)|      SLOW  |    2.580(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<9>        |    5.589(F)|      SLOW  |    2.022(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<10>       |    5.017(F)|      SLOW  |    2.701(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<11>       |    4.745(F)|      SLOW  |    2.462(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<12>       |    5.607(F)|      SLOW  |    1.893(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<13>       |    5.126(F)|      SLOW  |    2.288(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<14>       |    5.081(F)|      SLOW  |    2.029(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<15>       |    4.800(F)|      SLOW  |    2.171(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<16>       |    4.791(F)|      SLOW  |    2.086(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<17>       |    5.007(F)|      SLOW  |    2.488(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<18>       |    5.174(F)|      SLOW  |    2.139(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<19>       |    4.670(F)|      SLOW  |    2.050(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<20>       |    5.205(F)|      SLOW  |    2.350(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<21>       |    4.758(F)|      SLOW  |    2.461(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<22>       |    5.051(F)|      SLOW  |    1.092(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<23>       |    4.702(F)|      SLOW  |    1.730(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<24>       |    5.255(F)|      SLOW  |    1.692(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<25>       |    5.054(F)|      SLOW  |    1.700(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<26>       |    4.938(F)|      SLOW  |    1.826(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<27>       |    4.614(F)|      SLOW  |    1.740(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<28>       |    4.362(F)|      SLOW  |    2.433(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<29>       |    5.035(F)|      SLOW  |    2.134(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<30>       |    5.059(F)|      SLOW  |    1.187(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<31>       |    4.869(F)|      SLOW  |    0.945(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<0>        |    5.537(F)|      SLOW  |    2.125(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<1>        |    5.825(F)|      SLOW  |    1.950(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<2>        |    5.675(F)|      SLOW  |    2.990(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<3>        |    6.055(F)|      SLOW  |    2.193(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<4>        |    6.343(F)|      SLOW  |    1.801(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<5>        |    5.375(F)|      SLOW  |    2.400(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<6>        |    5.755(F)|      SLOW  |    2.304(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<7>        |    6.249(F)|      SLOW  |    1.452(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<8>        |    6.114(F)|      SLOW  |    2.040(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<9>        |    5.692(F)|      SLOW  |    2.300(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<10>       |    5.910(F)|      SLOW  |    2.536(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<11>       |    6.771(F)|      SLOW  |    1.141(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<12>       |    5.456(F)|      SLOW  |    2.242(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<13>       |    5.581(F)|      SLOW  |    1.623(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<14>       |    6.058(F)|      SLOW  |    1.722(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<15>       |    5.557(F)|      SLOW  |    1.143(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<16>       |    5.794(F)|      SLOW  |    1.632(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<17>       |    5.939(F)|      SLOW  |    1.914(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<18>       |    6.122(F)|      SLOW  |    1.418(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<19>       |    5.700(F)|      SLOW  |    1.791(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<20>       |    5.616(F)|      SLOW  |    1.203(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<21>       |    6.234(F)|      SLOW  |    0.494(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<22>       |    5.765(F)|      SLOW  |    2.073(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<23>       |    6.183(F)|      SLOW  |    1.755(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<24>       |    5.978(F)|      SLOW  |    0.754(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<25>       |    6.274(F)|      SLOW  |    1.522(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<26>       |    5.807(F)|      SLOW  |    1.434(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<27>       |    5.600(F)|      SLOW  |    0.702(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<28>       |    5.660(F)|      SLOW  |    1.522(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<29>       |    5.241(F)|      SLOW  |    1.500(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<30>       |    4.692(F)|      SLOW  |    1.089(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<31>       |    5.318(F)|      SLOW  |    1.722(F)|      SLOW  |_n0199_BUFG       |   0.000|
+Cin         |    4.622(F)|      SLOW  |    1.532(F)|      SLOW  |_n0199_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Card<1>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<0>        |    7.354(F)|      SLOW  |    1.641(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<1>        |    6.594(F)|      SLOW  |    1.861(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<2>        |    6.540(F)|      SLOW  |    1.752(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<3>        |    6.699(F)|      SLOW  |    1.770(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<4>        |    6.157(F)|      SLOW  |    2.224(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<5>        |    6.240(F)|      SLOW  |    2.057(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<6>        |    6.051(F)|      SLOW  |    1.735(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<7>        |    6.049(F)|      SLOW  |    1.796(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<8>        |    5.969(F)|      SLOW  |    2.219(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<9>        |    5.938(F)|      SLOW  |    1.661(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<10>       |    5.366(F)|      SLOW  |    2.340(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<11>       |    5.094(F)|      SLOW  |    2.101(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<12>       |    5.956(F)|      SLOW  |    1.532(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<13>       |    5.475(F)|      SLOW  |    1.927(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<14>       |    5.430(F)|      SLOW  |    1.668(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<15>       |    5.149(F)|      SLOW  |    1.810(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<16>       |    5.140(F)|      SLOW  |    1.725(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<17>       |    5.356(F)|      SLOW  |    2.127(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<18>       |    5.523(F)|      SLOW  |    1.778(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<19>       |    5.019(F)|      SLOW  |    1.689(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<20>       |    5.554(F)|      SLOW  |    1.989(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<21>       |    5.107(F)|      SLOW  |    2.100(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<22>       |    5.400(F)|      SLOW  |    0.731(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<23>       |    5.051(F)|      SLOW  |    1.369(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<24>       |    5.604(F)|      SLOW  |    1.331(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<25>       |    5.403(F)|      SLOW  |    1.339(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<26>       |    5.287(F)|      SLOW  |    1.465(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<27>       |    4.963(F)|      SLOW  |    1.379(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<28>       |    4.711(F)|      SLOW  |    2.072(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<29>       |    5.384(F)|      SLOW  |    1.773(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<30>       |    5.408(F)|      SLOW  |    0.826(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<31>       |    5.218(F)|      SLOW  |    0.584(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<0>        |    5.886(F)|      SLOW  |    1.764(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<1>        |    6.174(F)|      SLOW  |    1.589(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<2>        |    6.024(F)|      SLOW  |    2.629(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<3>        |    6.404(F)|      SLOW  |    1.832(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<4>        |    6.692(F)|      SLOW  |    1.440(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<5>        |    5.724(F)|      SLOW  |    2.039(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<6>        |    6.104(F)|      SLOW  |    1.943(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<7>        |    6.598(F)|      SLOW  |    1.091(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<8>        |    6.463(F)|      SLOW  |    1.679(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<9>        |    6.041(F)|      SLOW  |    1.939(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<10>       |    6.259(F)|      SLOW  |    2.175(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<11>       |    7.120(F)|      SLOW  |    0.780(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<12>       |    5.805(F)|      SLOW  |    1.881(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<13>       |    5.930(F)|      SLOW  |    1.262(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<14>       |    6.407(F)|      SLOW  |    1.361(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<15>       |    5.906(F)|      SLOW  |    0.782(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<16>       |    6.143(F)|      SLOW  |    1.271(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<17>       |    6.288(F)|      SLOW  |    1.553(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<18>       |    6.471(F)|      SLOW  |    1.057(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<19>       |    6.049(F)|      SLOW  |    1.430(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<20>       |    5.965(F)|      SLOW  |    0.842(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<21>       |    6.583(F)|      SLOW  |    0.133(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<22>       |    6.114(F)|      SLOW  |    1.712(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<23>       |    6.532(F)|      SLOW  |    1.394(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<24>       |    6.327(F)|      SLOW  |    0.393(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<25>       |    6.623(F)|      SLOW  |    1.161(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<26>       |    6.156(F)|      SLOW  |    1.073(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<27>       |    5.949(F)|      SLOW  |    0.341(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<28>       |    6.009(F)|      SLOW  |    1.161(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<29>       |    5.590(F)|      SLOW  |    1.139(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<30>       |    5.041(F)|      SLOW  |    0.728(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<31>       |    5.667(F)|      SLOW  |    1.361(F)|      SLOW  |_n0199_BUFG       |   0.000|
+Cin         |    4.971(F)|      SLOW  |    1.171(F)|      SLOW  |_n0199_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Card<2>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<0>        |    6.770(F)|      SLOW  |    2.256(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<1>        |    6.010(F)|      SLOW  |    2.476(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<2>        |    5.956(F)|      SLOW  |    2.367(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<3>        |    6.115(F)|      SLOW  |    2.385(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<4>        |    5.573(F)|      SLOW  |    2.839(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<5>        |    5.656(F)|      SLOW  |    2.672(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<6>        |    5.467(F)|      SLOW  |    2.350(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<7>        |    5.465(F)|      SLOW  |    2.411(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<8>        |    5.385(F)|      SLOW  |    2.834(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<9>        |    5.354(F)|      SLOW  |    2.276(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<10>       |    4.782(F)|      SLOW  |    2.955(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<11>       |    4.510(F)|      SLOW  |    2.716(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<12>       |    5.372(F)|      SLOW  |    2.147(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<13>       |    4.891(F)|      SLOW  |    2.542(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<14>       |    4.846(F)|      SLOW  |    2.283(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<15>       |    4.565(F)|      SLOW  |    2.425(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<16>       |    4.556(F)|      SLOW  |    2.340(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<17>       |    4.772(F)|      SLOW  |    2.742(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<18>       |    4.939(F)|      SLOW  |    2.393(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<19>       |    4.435(F)|      SLOW  |    2.304(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<20>       |    4.970(F)|      SLOW  |    2.604(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<21>       |    4.523(F)|      SLOW  |    2.715(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<22>       |    4.816(F)|      SLOW  |    1.346(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<23>       |    4.467(F)|      SLOW  |    1.984(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<24>       |    5.020(F)|      SLOW  |    1.946(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<25>       |    4.819(F)|      SLOW  |    1.954(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<26>       |    4.703(F)|      SLOW  |    2.080(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<27>       |    4.379(F)|      SLOW  |    1.994(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<28>       |    4.127(F)|      SLOW  |    2.687(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<29>       |    4.800(F)|      SLOW  |    2.388(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<30>       |    4.824(F)|      SLOW  |    1.441(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<31>       |    4.634(F)|      SLOW  |    1.199(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<0>        |    5.302(F)|      SLOW  |    2.379(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<1>        |    5.590(F)|      SLOW  |    2.204(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<2>        |    5.440(F)|      SLOW  |    3.244(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<3>        |    5.820(F)|      SLOW  |    2.447(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<4>        |    6.108(F)|      SLOW  |    2.055(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<5>        |    5.140(F)|      SLOW  |    2.654(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<6>        |    5.520(F)|      SLOW  |    2.558(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<7>        |    6.014(F)|      SLOW  |    1.706(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<8>        |    5.879(F)|      SLOW  |    2.294(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<9>        |    5.457(F)|      SLOW  |    2.554(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<10>       |    5.675(F)|      SLOW  |    2.790(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<11>       |    6.536(F)|      SLOW  |    1.395(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<12>       |    5.221(F)|      SLOW  |    2.496(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<13>       |    5.346(F)|      SLOW  |    1.877(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<14>       |    5.823(F)|      SLOW  |    1.976(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<15>       |    5.322(F)|      SLOW  |    1.397(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<16>       |    5.559(F)|      SLOW  |    1.886(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<17>       |    5.704(F)|      SLOW  |    2.168(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<18>       |    5.887(F)|      SLOW  |    1.672(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<19>       |    5.465(F)|      SLOW  |    2.045(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<20>       |    5.381(F)|      SLOW  |    1.457(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<21>       |    5.999(F)|      SLOW  |    0.748(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<22>       |    5.530(F)|      SLOW  |    2.327(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<23>       |    5.948(F)|      SLOW  |    2.009(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<24>       |    5.743(F)|      SLOW  |    1.008(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<25>       |    6.039(F)|      SLOW  |    1.776(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<26>       |    5.572(F)|      SLOW  |    1.688(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<27>       |    5.365(F)|      SLOW  |    0.956(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<28>       |    5.425(F)|      SLOW  |    1.776(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<29>       |    5.006(F)|      SLOW  |    1.754(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<30>       |    4.457(F)|      SLOW  |    1.343(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<31>       |    5.083(F)|      SLOW  |    1.976(F)|      SLOW  |_n0199_BUFG       |   0.000|
+Cin         |    4.387(F)|      SLOW  |    1.786(F)|      SLOW  |_n0199_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Card<3>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<0>        |    7.388(F)|      SLOW  |    1.597(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<1>        |    6.628(F)|      SLOW  |    1.817(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<2>        |    6.574(F)|      SLOW  |    1.708(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<3>        |    6.733(F)|      SLOW  |    1.726(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<4>        |    6.191(F)|      SLOW  |    2.180(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<5>        |    6.274(F)|      SLOW  |    2.013(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<6>        |    6.085(F)|      SLOW  |    1.691(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<7>        |    6.083(F)|      SLOW  |    1.752(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<8>        |    6.003(F)|      SLOW  |    2.175(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<9>        |    5.972(F)|      SLOW  |    1.617(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<10>       |    5.400(F)|      SLOW  |    2.296(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<11>       |    5.128(F)|      SLOW  |    2.057(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<12>       |    5.990(F)|      SLOW  |    1.488(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<13>       |    5.509(F)|      SLOW  |    1.883(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<14>       |    5.464(F)|      SLOW  |    1.624(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<15>       |    5.183(F)|      SLOW  |    1.766(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<16>       |    5.174(F)|      SLOW  |    1.681(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<17>       |    5.390(F)|      SLOW  |    2.083(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<18>       |    5.557(F)|      SLOW  |    1.734(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<19>       |    5.053(F)|      SLOW  |    1.645(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<20>       |    5.588(F)|      SLOW  |    1.945(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<21>       |    5.141(F)|      SLOW  |    2.056(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<22>       |    5.434(F)|      SLOW  |    0.687(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<23>       |    5.085(F)|      SLOW  |    1.325(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<24>       |    5.638(F)|      SLOW  |    1.287(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<25>       |    5.437(F)|      SLOW  |    1.295(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<26>       |    5.321(F)|      SLOW  |    1.421(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<27>       |    4.997(F)|      SLOW  |    1.335(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<28>       |    4.745(F)|      SLOW  |    2.028(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<29>       |    5.418(F)|      SLOW  |    1.729(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<30>       |    5.442(F)|      SLOW  |    0.782(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<31>       |    5.252(F)|      SLOW  |    0.540(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<0>        |    5.920(F)|      SLOW  |    1.720(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<1>        |    6.208(F)|      SLOW  |    1.545(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<2>        |    6.058(F)|      SLOW  |    2.585(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<3>        |    6.438(F)|      SLOW  |    1.788(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<4>        |    6.726(F)|      SLOW  |    1.396(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<5>        |    5.758(F)|      SLOW  |    1.995(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<6>        |    6.138(F)|      SLOW  |    1.899(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<7>        |    6.632(F)|      SLOW  |    1.047(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<8>        |    6.497(F)|      SLOW  |    1.635(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<9>        |    6.075(F)|      SLOW  |    1.895(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<10>       |    6.293(F)|      SLOW  |    2.131(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<11>       |    7.154(F)|      SLOW  |    0.736(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<12>       |    5.839(F)|      SLOW  |    1.837(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<13>       |    5.964(F)|      SLOW  |    1.218(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<14>       |    6.441(F)|      SLOW  |    1.317(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<15>       |    5.940(F)|      SLOW  |    0.738(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<16>       |    6.177(F)|      SLOW  |    1.227(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<17>       |    6.322(F)|      SLOW  |    1.509(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<18>       |    6.505(F)|      SLOW  |    1.013(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<19>       |    6.083(F)|      SLOW  |    1.386(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<20>       |    5.999(F)|      SLOW  |    0.798(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<21>       |    6.617(F)|      SLOW  |    0.089(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<22>       |    6.148(F)|      SLOW  |    1.668(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<23>       |    6.566(F)|      SLOW  |    1.350(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<24>       |    6.361(F)|      SLOW  |    0.349(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<25>       |    6.657(F)|      SLOW  |    1.117(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<26>       |    6.190(F)|      SLOW  |    1.029(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<27>       |    5.983(F)|      SLOW  |    0.297(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<28>       |    6.043(F)|      SLOW  |    1.117(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<29>       |    5.624(F)|      SLOW  |    1.095(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<30>       |    5.075(F)|      SLOW  |    0.684(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<31>       |    5.701(F)|      SLOW  |    1.317(F)|      SLOW  |_n0199_BUFG       |   0.000|
+Cin         |    5.005(F)|      SLOW  |    1.127(F)|      SLOW  |_n0199_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Card<4>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<0>        |    5.827(F)|      SLOW  |    3.251(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<1>        |    5.067(F)|      SLOW  |    3.471(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<2>        |    5.013(F)|      SLOW  |    3.362(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<3>        |    5.172(F)|      SLOW  |    3.380(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<4>        |    4.630(F)|      SLOW  |    3.834(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<5>        |    4.713(F)|      SLOW  |    3.667(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<6>        |    4.524(F)|      SLOW  |    3.345(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<7>        |    4.522(F)|      SLOW  |    3.406(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<8>        |    4.442(F)|      SLOW  |    3.829(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<9>        |    4.411(F)|      SLOW  |    3.271(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<10>       |    3.839(F)|      SLOW  |    3.950(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<11>       |    3.567(F)|      SLOW  |    3.711(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<12>       |    4.429(F)|      SLOW  |    3.142(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<13>       |    3.948(F)|      SLOW  |    3.537(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<14>       |    3.903(F)|      SLOW  |    3.278(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<15>       |    3.622(F)|      SLOW  |    3.420(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<16>       |    3.613(F)|      SLOW  |    3.335(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<17>       |    3.829(F)|      SLOW  |    3.737(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<18>       |    3.996(F)|      SLOW  |    3.388(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<19>       |    3.492(F)|      SLOW  |    3.299(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<20>       |    4.027(F)|      SLOW  |    3.599(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<21>       |    3.580(F)|      SLOW  |    3.710(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<22>       |    3.873(F)|      SLOW  |    2.341(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<23>       |    3.524(F)|      SLOW  |    2.979(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<24>       |    4.077(F)|      SLOW  |    2.941(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<25>       |    3.876(F)|      SLOW  |    2.949(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<26>       |    3.760(F)|      SLOW  |    3.075(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<27>       |    3.436(F)|      SLOW  |    2.989(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<28>       |    3.184(F)|      SLOW  |    3.682(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<29>       |    3.857(F)|      SLOW  |    3.383(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<30>       |    3.881(F)|      SLOW  |    2.436(F)|      SLOW  |_n0199_BUFG       |   0.000|
+A<31>       |    3.691(F)|      SLOW  |    2.194(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<0>        |    4.359(F)|      SLOW  |    3.374(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<1>        |    4.647(F)|      SLOW  |    3.199(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<2>        |    4.497(F)|      SLOW  |    4.239(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<3>        |    4.877(F)|      SLOW  |    3.442(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<4>        |    5.165(F)|      SLOW  |    3.050(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<5>        |    4.197(F)|      SLOW  |    3.649(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<6>        |    4.577(F)|      SLOW  |    3.553(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<7>        |    5.071(F)|      SLOW  |    2.701(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<8>        |    4.936(F)|      SLOW  |    3.289(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<9>        |    4.514(F)|      SLOW  |    3.549(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<10>       |    4.732(F)|      SLOW  |    3.785(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<11>       |    5.593(F)|      SLOW  |    2.390(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<12>       |    4.278(F)|      SLOW  |    3.491(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<13>       |    4.403(F)|      SLOW  |    2.872(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<14>       |    4.880(F)|      SLOW  |    2.971(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<15>       |    4.379(F)|      SLOW  |    2.392(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<16>       |    4.616(F)|      SLOW  |    2.881(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<17>       |    4.761(F)|      SLOW  |    3.163(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<18>       |    4.944(F)|      SLOW  |    2.667(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<19>       |    4.522(F)|      SLOW  |    3.040(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<20>       |    4.438(F)|      SLOW  |    2.452(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<21>       |    5.056(F)|      SLOW  |    1.743(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<22>       |    4.587(F)|      SLOW  |    3.322(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<23>       |    5.005(F)|      SLOW  |    3.004(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<24>       |    4.800(F)|      SLOW  |    2.003(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<25>       |    5.096(F)|      SLOW  |    2.771(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<26>       |    4.629(F)|      SLOW  |    2.683(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<27>       |    4.422(F)|      SLOW  |    1.951(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<28>       |    4.482(F)|      SLOW  |    2.771(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<29>       |    4.063(F)|      SLOW  |    2.749(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<30>       |    3.514(F)|      SLOW  |    2.338(F)|      SLOW  |_n0199_BUFG       |   0.000|
+B<31>       |    4.140(F)|      SLOW  |    2.971(F)|      SLOW  |_n0199_BUFG       |   0.000|
+Cin         |    3.444(F)|      SLOW  |    2.781(F)|      SLOW  |_n0199_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Card<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Cout        |        11.157(F)|      SLOW  |         6.304(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<0>        |        11.147(F)|      SLOW  |         6.294(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<1>        |        11.150(F)|      SLOW  |         6.297(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<2>        |        11.150(F)|      SLOW  |         6.297(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<3>        |        11.153(F)|      SLOW  |         6.300(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<4>        |        11.153(F)|      SLOW  |         6.300(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<5>        |        11.145(F)|      SLOW  |         6.292(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<6>        |        11.145(F)|      SLOW  |         6.292(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<7>        |        11.148(F)|      SLOW  |         6.295(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<8>        |        11.148(F)|      SLOW  |         6.295(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<9>        |        11.151(F)|      SLOW  |         6.298(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<10>       |        11.151(F)|      SLOW  |         6.298(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<11>       |        11.153(F)|      SLOW  |         6.300(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<12>       |        11.153(F)|      SLOW  |         6.300(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<13>       |        11.156(F)|      SLOW  |         6.303(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<14>       |        11.156(F)|      SLOW  |         6.303(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<15>       |        11.157(F)|      SLOW  |         6.304(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<16>       |        11.157(F)|      SLOW  |         6.304(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<17>       |        11.159(F)|      SLOW  |         6.306(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<18>       |        11.159(F)|      SLOW  |         6.306(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<19>       |        11.159(F)|      SLOW  |         6.306(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<20>       |        11.159(F)|      SLOW  |         6.306(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<21>       |        11.157(F)|      SLOW  |         6.304(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<22>       |        11.153(F)|      SLOW  |         6.300(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<23>       |        11.150(F)|      SLOW  |         6.297(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<24>       |        11.158(F)|      SLOW  |         6.305(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<25>       |        11.146(F)|      SLOW  |         6.293(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<26>       |        11.146(F)|      SLOW  |         6.293(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<27>       |        11.157(F)|      SLOW  |         6.304(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<28>       |        11.153(F)|      SLOW  |         6.300(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<29>       |        11.150(F)|      SLOW  |         6.297(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<30>       |        11.158(F)|      SLOW  |         6.305(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<31>       |        11.157(F)|      SLOW  |         6.304(F)|      FAST  |_n0199_BUFG       |   0.000|
+Zero        |        17.021(F)|      SLOW  |         9.041(F)|      FAST  |_n0199_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Card<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Cout        |        10.796(F)|      SLOW  |         5.959(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<0>        |        10.786(F)|      SLOW  |         5.949(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<1>        |        10.789(F)|      SLOW  |         5.952(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<2>        |        10.789(F)|      SLOW  |         5.952(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<3>        |        10.792(F)|      SLOW  |         5.955(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<4>        |        10.792(F)|      SLOW  |         5.955(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<5>        |        10.784(F)|      SLOW  |         5.947(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<6>        |        10.784(F)|      SLOW  |         5.947(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<7>        |        10.787(F)|      SLOW  |         5.950(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<8>        |        10.787(F)|      SLOW  |         5.950(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<9>        |        10.790(F)|      SLOW  |         5.953(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<10>       |        10.790(F)|      SLOW  |         5.953(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<11>       |        10.792(F)|      SLOW  |         5.955(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<12>       |        10.792(F)|      SLOW  |         5.955(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<13>       |        10.795(F)|      SLOW  |         5.958(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<14>       |        10.795(F)|      SLOW  |         5.958(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<15>       |        10.796(F)|      SLOW  |         5.959(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<16>       |        10.796(F)|      SLOW  |         5.959(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<17>       |        10.798(F)|      SLOW  |         5.961(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<18>       |        10.798(F)|      SLOW  |         5.961(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<19>       |        10.798(F)|      SLOW  |         5.961(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<20>       |        10.798(F)|      SLOW  |         5.961(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<21>       |        10.796(F)|      SLOW  |         5.959(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<22>       |        10.792(F)|      SLOW  |         5.955(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<23>       |        10.789(F)|      SLOW  |         5.952(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<24>       |        10.797(F)|      SLOW  |         5.960(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<25>       |        10.785(F)|      SLOW  |         5.948(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<26>       |        10.785(F)|      SLOW  |         5.948(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<27>       |        10.796(F)|      SLOW  |         5.959(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<28>       |        10.792(F)|      SLOW  |         5.955(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<29>       |        10.789(F)|      SLOW  |         5.952(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<30>       |        10.797(F)|      SLOW  |         5.960(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<31>       |        10.796(F)|      SLOW  |         5.959(F)|      FAST  |_n0199_BUFG       |   0.000|
+Zero        |        16.660(F)|      SLOW  |         8.696(F)|      FAST  |_n0199_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Card<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Cout        |        11.411(F)|      SLOW  |         6.508(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<0>        |        11.401(F)|      SLOW  |         6.498(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<1>        |        11.404(F)|      SLOW  |         6.501(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<2>        |        11.404(F)|      SLOW  |         6.501(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<3>        |        11.407(F)|      SLOW  |         6.504(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<4>        |        11.407(F)|      SLOW  |         6.504(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<5>        |        11.399(F)|      SLOW  |         6.496(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<6>        |        11.399(F)|      SLOW  |         6.496(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<7>        |        11.402(F)|      SLOW  |         6.499(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<8>        |        11.402(F)|      SLOW  |         6.499(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<9>        |        11.405(F)|      SLOW  |         6.502(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<10>       |        11.405(F)|      SLOW  |         6.502(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<11>       |        11.407(F)|      SLOW  |         6.504(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<12>       |        11.407(F)|      SLOW  |         6.504(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<13>       |        11.410(F)|      SLOW  |         6.507(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<14>       |        11.410(F)|      SLOW  |         6.507(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<15>       |        11.411(F)|      SLOW  |         6.508(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<16>       |        11.411(F)|      SLOW  |         6.508(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<17>       |        11.413(F)|      SLOW  |         6.510(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<18>       |        11.413(F)|      SLOW  |         6.510(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<19>       |        11.413(F)|      SLOW  |         6.510(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<20>       |        11.413(F)|      SLOW  |         6.510(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<21>       |        11.411(F)|      SLOW  |         6.508(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<22>       |        11.407(F)|      SLOW  |         6.504(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<23>       |        11.404(F)|      SLOW  |         6.501(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<24>       |        11.412(F)|      SLOW  |         6.509(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<25>       |        11.400(F)|      SLOW  |         6.497(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<26>       |        11.400(F)|      SLOW  |         6.497(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<27>       |        11.411(F)|      SLOW  |         6.508(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<28>       |        11.407(F)|      SLOW  |         6.504(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<29>       |        11.404(F)|      SLOW  |         6.501(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<30>       |        11.412(F)|      SLOW  |         6.509(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<31>       |        11.411(F)|      SLOW  |         6.508(F)|      FAST  |_n0199_BUFG       |   0.000|
+Zero        |        17.275(F)|      SLOW  |         9.245(F)|      FAST  |_n0199_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Card<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Cout        |        10.752(F)|      SLOW  |         6.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<0>        |        10.742(F)|      SLOW  |         6.001(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<1>        |        10.745(F)|      SLOW  |         6.004(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<2>        |        10.745(F)|      SLOW  |         6.004(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<3>        |        10.748(F)|      SLOW  |         6.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<4>        |        10.748(F)|      SLOW  |         6.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<5>        |        10.740(F)|      SLOW  |         5.999(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<6>        |        10.740(F)|      SLOW  |         5.999(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<7>        |        10.743(F)|      SLOW  |         6.002(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<8>        |        10.743(F)|      SLOW  |         6.002(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<9>        |        10.746(F)|      SLOW  |         6.005(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<10>       |        10.746(F)|      SLOW  |         6.005(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<11>       |        10.748(F)|      SLOW  |         6.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<12>       |        10.748(F)|      SLOW  |         6.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<13>       |        10.751(F)|      SLOW  |         6.010(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<14>       |        10.751(F)|      SLOW  |         6.010(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<15>       |        10.752(F)|      SLOW  |         6.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<16>       |        10.752(F)|      SLOW  |         6.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<17>       |        10.754(F)|      SLOW  |         6.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<18>       |        10.754(F)|      SLOW  |         6.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<19>       |        10.754(F)|      SLOW  |         6.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<20>       |        10.754(F)|      SLOW  |         6.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<21>       |        10.752(F)|      SLOW  |         6.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<22>       |        10.748(F)|      SLOW  |         6.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<23>       |        10.745(F)|      SLOW  |         6.004(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<24>       |        10.753(F)|      SLOW  |         6.012(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<25>       |        10.741(F)|      SLOW  |         6.000(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<26>       |        10.741(F)|      SLOW  |         6.000(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<27>       |        10.752(F)|      SLOW  |         6.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<28>       |        10.748(F)|      SLOW  |         6.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<29>       |        10.745(F)|      SLOW  |         6.004(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<30>       |        10.753(F)|      SLOW  |         6.012(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<31>       |        10.752(F)|      SLOW  |         6.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+Zero        |        16.616(F)|      SLOW  |         8.748(F)|      FAST  |_n0199_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Card<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Cout        |        12.406(F)|      SLOW  |         7.017(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<0>        |        12.396(F)|      SLOW  |         7.007(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<1>        |        12.399(F)|      SLOW  |         7.010(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<2>        |        12.399(F)|      SLOW  |         7.010(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<3>        |        12.402(F)|      SLOW  |         7.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<4>        |        12.402(F)|      SLOW  |         7.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<5>        |        12.394(F)|      SLOW  |         7.005(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<6>        |        12.394(F)|      SLOW  |         7.005(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<7>        |        12.397(F)|      SLOW  |         7.008(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<8>        |        12.397(F)|      SLOW  |         7.008(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<9>        |        12.400(F)|      SLOW  |         7.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<10>       |        12.400(F)|      SLOW  |         7.011(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<11>       |        12.402(F)|      SLOW  |         7.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<12>       |        12.402(F)|      SLOW  |         7.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<13>       |        12.405(F)|      SLOW  |         7.016(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<14>       |        12.405(F)|      SLOW  |         7.016(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<15>       |        12.406(F)|      SLOW  |         7.017(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<16>       |        12.406(F)|      SLOW  |         7.017(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<17>       |        12.408(F)|      SLOW  |         7.019(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<18>       |        12.408(F)|      SLOW  |         7.019(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<19>       |        12.408(F)|      SLOW  |         7.019(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<20>       |        12.408(F)|      SLOW  |         7.019(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<21>       |        12.406(F)|      SLOW  |         7.017(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<22>       |        12.402(F)|      SLOW  |         7.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<23>       |        12.399(F)|      SLOW  |         7.010(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<24>       |        12.407(F)|      SLOW  |         7.018(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<25>       |        12.395(F)|      SLOW  |         7.006(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<26>       |        12.395(F)|      SLOW  |         7.006(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<27>       |        12.406(F)|      SLOW  |         7.017(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<28>       |        12.402(F)|      SLOW  |         7.013(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<29>       |        12.399(F)|      SLOW  |         7.010(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<30>       |        12.407(F)|      SLOW  |         7.018(F)|      FAST  |_n0199_BUFG       |   0.000|
+F<31>       |        12.406(F)|      SLOW  |         7.017(F)|      FAST  |_n0199_BUFG       |   0.000|
+Zero        |        18.270(F)|      SLOW  |         9.754(F)|      FAST  |_n0199_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Card<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Card<0>        |         |         |    3.682|    3.682|
+Card<1>        |         |         |    1.830|    1.830|
+Card<2>        |         |         |    3.531|    3.531|
+Card<3>        |         |         |    3.906|    3.906|
+Card<4>        |         |         |    2.505|    2.505|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Card<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Card<0>        |         |         |    4.031|    4.031|
+Card<1>        |         |         |    2.179|    2.179|
+Card<2>        |         |         |    3.880|    3.880|
+Card<3>        |         |         |    4.255|    4.255|
+Card<4>        |         |         |    2.854|    2.854|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Card<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Card<0>        |         |         |    3.447|    3.447|
+Card<1>        |         |         |    1.595|    1.595|
+Card<2>        |         |         |    3.296|    3.296|
+Card<3>        |         |         |    3.671|    3.671|
+Card<4>        |         |         |    2.270|    2.270|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Card<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Card<0>        |         |         |    4.065|    4.065|
+Card<1>        |         |         |    2.213|    2.213|
+Card<2>        |         |         |    3.914|    3.914|
+Card<3>        |         |         |    4.289|    4.289|
+Card<4>        |         |         |    2.888|    2.888|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Card<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Card<0>        |         |         |    2.504|    2.504|
+Card<1>        |         |         |    0.862|    0.862|
+Card<2>        |         |         |    2.353|    2.353|
+Card<3>        |         |         |    2.728|    2.728|
+Card<4>        |         |         |    1.387|    1.387|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Oct 19 16:52:11 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 176 MB
+
+
+

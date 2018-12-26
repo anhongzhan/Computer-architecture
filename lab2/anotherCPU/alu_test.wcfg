@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/alu_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="alu_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/alu_test/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_test/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_test/ReadData1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_test/immediate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_test/ReadData2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_test/ALUSrcB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_test/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
+   </wvobject>
+</wave_config>

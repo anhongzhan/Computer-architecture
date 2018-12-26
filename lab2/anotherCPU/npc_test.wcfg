@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/npc_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="npc_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="/npc_test/npc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/npc_test/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+</wave_config>

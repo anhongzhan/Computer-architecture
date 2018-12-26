@@ -1,0 +1,989 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: WIN.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "WIN.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "WIN"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : WIN
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\ise project\CPU_5\CPU.v" into library work
+Parsing module <CU>.
+Parsing module <PC>.
+Parsing module <ALU>.
+Parsing module <InstructionMemory>.
+Parsing module <DataMemoey>.
+WARNING:HDLCompiler:991 - "F:\ise project\CPU_5\CPU.v" Line 158: Event expressions must result in a singular type
+Parsing module <RegisterFile>.
+Parsing module <Control>.
+Parsing module <WIN>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <WIN>.
+
+Elaborating module <PC>.
+
+Elaborating module <CU>.
+
+Elaborating module <RegisterFile>.
+Reading initialization file \"RF\".
+
+Elaborating module <ALU>.
+
+Elaborating module <DataMemoey>.
+Reading initialization file \"MDR\".
+WARNING:HDLCompiler:1670 - "F:\ise project\CPU_5\CPU.v" Line 155: Signal <MDRcache> in initial block is partially initialized.
+
+Elaborating module <Control>.
+
+Elaborating module <InstructionMemory>.
+Reading initialization file \"MAR\".
+WARNING:HDLCompiler:1670 - "F:\ise project\CPU_5\CPU.v" Line 135: Signal <MARcache> in initial block is partially initialized.
+WARNING:HDLCompiler:1127 - "F:\ise project\CPU_5\CPU.v" Line 240: Assignment to flag2 ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <WIN>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+    Found 32-bit adder for signal <BEQDes> created at line 467.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <WIN> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+    Found 1-bit register for signal <flag>.
+    Found 32-bit register for signal <currentPC>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <CU>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+WARNING:Xst:647 - Input <IFID_OP<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <CU> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+    Found 1-bit register for signal <constant>.
+    Found 32x32-bit dual-port RAM <Mram_registers> for signal <registers>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_2_OUT> created at line 109.
+    Found 32-bit adder for signal <A[31]_B[31]_add_0_OUT> created at line 108.
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_6_o> created at line 113
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <DataMemoey>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+WARNING:Xst:647 - Input <DataAddr<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <MDRcache>, simulation mismatch.
+    Found 65x32-bit single-port RAM <Mram_MDRcache> for signal <MDRcache>.
+    Found 1-bit register for signal <led>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 D-type flip-flop(s).
+Unit <DataMemoey> synthesized.
+
+Synthesizing Unit <Control>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+    Found 1-bit register for signal <IDEX<95>>.
+    Found 1-bit register for signal <IDEX<94>>.
+    Found 1-bit register for signal <IDEX<93>>.
+    Found 1-bit register for signal <IDEX<92>>.
+    Found 1-bit register for signal <IDEX<91>>.
+    Found 1-bit register for signal <IDEX<90>>.
+    Found 1-bit register for signal <IDEX<89>>.
+    Found 1-bit register for signal <IDEX<88>>.
+    Found 1-bit register for signal <IDEX<87>>.
+    Found 1-bit register for signal <IDEX<86>>.
+    Found 1-bit register for signal <IDEX<85>>.
+    Found 1-bit register for signal <IDEX<84>>.
+    Found 1-bit register for signal <IDEX<83>>.
+    Found 1-bit register for signal <IDEX<82>>.
+    Found 1-bit register for signal <IDEX<81>>.
+    Found 1-bit register for signal <IDEX<80>>.
+    Found 1-bit register for signal <IDEX<79>>.
+    Found 1-bit register for signal <IDEX<78>>.
+    Found 1-bit register for signal <IDEX<77>>.
+    Found 1-bit register for signal <IDEX<76>>.
+    Found 1-bit register for signal <IDEX<75>>.
+    Found 1-bit register for signal <IDEX<74>>.
+    Found 1-bit register for signal <IDEX<73>>.
+    Found 1-bit register for signal <IDEX<72>>.
+    Found 1-bit register for signal <IDEX<71>>.
+    Found 1-bit register for signal <IDEX<70>>.
+    Found 1-bit register for signal <IDEX<69>>.
+    Found 1-bit register for signal <IDEX<68>>.
+    Found 1-bit register for signal <IDEX<67>>.
+    Found 1-bit register for signal <IDEX<66>>.
+    Found 1-bit register for signal <IDEX<65>>.
+    Found 1-bit register for signal <IDEX<64>>.
+    Found 1-bit register for signal <IDEX<63>>.
+    Found 1-bit register for signal <IDEX<62>>.
+    Found 1-bit register for signal <IDEX<61>>.
+    Found 1-bit register for signal <IDEX<60>>.
+    Found 1-bit register for signal <IDEX<59>>.
+    Found 1-bit register for signal <IDEX<58>>.
+    Found 1-bit register for signal <IDEX<57>>.
+    Found 1-bit register for signal <IDEX<56>>.
+    Found 1-bit register for signal <IDEX<55>>.
+    Found 1-bit register for signal <IDEX<54>>.
+    Found 1-bit register for signal <IDEX<53>>.
+    Found 1-bit register for signal <IDEX<52>>.
+    Found 1-bit register for signal <IDEX<51>>.
+    Found 1-bit register for signal <IDEX<50>>.
+    Found 1-bit register for signal <IDEX<49>>.
+    Found 1-bit register for signal <IDEX<48>>.
+    Found 1-bit register for signal <IDEX<47>>.
+    Found 1-bit register for signal <IDEX<46>>.
+    Found 1-bit register for signal <IDEX<45>>.
+    Found 1-bit register for signal <IDEX<44>>.
+    Found 1-bit register for signal <IDEX<43>>.
+    Found 1-bit register for signal <IDEX<42>>.
+    Found 1-bit register for signal <IDEX<41>>.
+    Found 1-bit register for signal <IDEX<40>>.
+    Found 1-bit register for signal <IDEX<39>>.
+    Found 1-bit register for signal <IDEX<38>>.
+    Found 1-bit register for signal <IDEX<37>>.
+    Found 1-bit register for signal <IDEX<36>>.
+    Found 1-bit register for signal <IDEX<35>>.
+    Found 1-bit register for signal <IDEX<34>>.
+    Found 1-bit register for signal <IDEX<33>>.
+    Found 1-bit register for signal <IDEX<32>>.
+    Found 1-bit register for signal <IDEX<31>>.
+    Found 1-bit register for signal <IDEX<30>>.
+    Found 1-bit register for signal <IDEX<29>>.
+    Found 1-bit register for signal <IDEX<28>>.
+    Found 1-bit register for signal <IDEX<27>>.
+    Found 1-bit register for signal <IDEX<26>>.
+    Found 1-bit register for signal <IDEX<25>>.
+    Found 1-bit register for signal <IDEX<24>>.
+    Found 1-bit register for signal <IDEX<23>>.
+    Found 1-bit register for signal <IDEX<22>>.
+    Found 1-bit register for signal <IDEX<21>>.
+    Found 1-bit register for signal <IDEX<20>>.
+    Found 1-bit register for signal <IDEX<19>>.
+    Found 1-bit register for signal <IDEX<18>>.
+    Found 1-bit register for signal <IDEX<17>>.
+    Found 1-bit register for signal <IDEX<16>>.
+    Found 1-bit register for signal <IDEX<15>>.
+    Found 1-bit register for signal <IDEX<14>>.
+    Found 1-bit register for signal <IDEX<13>>.
+    Found 1-bit register for signal <IDEX<12>>.
+    Found 1-bit register for signal <IDEX<11>>.
+    Found 1-bit register for signal <IDEX<10>>.
+    Found 1-bit register for signal <IDEX<9>>.
+    Found 1-bit register for signal <IDEX<8>>.
+    Found 1-bit register for signal <IDEX<7>>.
+    Found 1-bit register for signal <IDEX<6>>.
+    Found 1-bit register for signal <IDEX<5>>.
+    Found 1-bit register for signal <IDEX<4>>.
+    Found 1-bit register for signal <IDEX<3>>.
+    Found 1-bit register for signal <IDEX<2>>.
+    Found 1-bit register for signal <IDEX<1>>.
+    Found 1-bit register for signal <IDEX<0>>.
+    Found 64-bit register for signal <MEMWB>.
+    Found 96-bit register for signal <EXMEM>.
+    Found 32-bit register for signal <IFID>.
+    Found 1-bit register for signal <redirection_two>.
+    Found 1-bit register for signal <redirection_one>.
+    Found 1-bit register for signal <flag>.
+    Found 32-bit register for signal <EXMEM_ALUInputSecond>.
+    Found 32-bit register for signal <EXMEM_result>.
+    Found 32-bit register for signal <EXMEM_instruction>.
+    Found 32-bit register for signal <MEMWB_registerWriteData>.
+    Found 32-bit register for signal <MEMWB_instruction>.
+    Found 32-bit register for signal <IDEX_ALUInputFirst>.
+    Found 32-bit register for signal <IDEX_ALUInputSecond>.
+    Found 32-bit register for signal <IFID_instruction>.
+    Found 32-bit register for signal <IDEX_instruction>.
+    Found 32-bit register for signal <redirection_Firstreg>.
+    Found 32-bit register for signal <redirection_Secondreg>.
+    Found 32-bit adder for signal <addr[31]_GND_7_o_add_1_OUT> created at line 237.
+    Found 5-bit comparator equal for signal <MEMWB[57]_IFID[25]_equal_6_o> created at line 244
+    Found 5-bit comparator equal for signal <MEMWB[57]_IFID[20]_equal_7_o> created at line 244
+    Found 6-bit comparator lessequal for signal <n0278> created at line 300
+    Found 6-bit comparator lessequal for signal <n0284> created at line 309
+    Found 6-bit comparator lessequal for signal <n0294> created at line 317
+    Found 5-bit comparator equal for signal <MEMWB[57]_IDEX[84]_equal_38_o> created at line 321
+    Found 5-bit comparator equal for signal <MEMWB[57]_IDEX[79]_equal_41_o> created at line 324
+    Found 5-bit comparator equal for signal <MEMWB[57]_IDEX[89]_equal_44_o> created at line 327
+    Found 6-bit comparator lessequal for signal <n0317> created at line 347
+    Found 5-bit comparator equal for signal <EXMEM[89]_IDEX[84]_equal_52_o> created at line 350
+    Found 5-bit comparator equal for signal <EXMEM[89]_IDEX[79]_equal_53_o> created at line 351
+    Found 6-bit comparator lessequal for signal <n0322> created at line 351
+    Found 5-bit comparator equal for signal <EXMEM[89]_IDEX[89]_equal_55_o> created at line 352
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 643 D-type flip-flop(s).
+	inferred  13 Comparator(s).
+	inferred 224 Multiplexer(s).
+Unit <Control> synthesized.
+
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "f:/ise project/cpu_5/cpu.v".
+WARNING:Xst:2999 - Signal 'MARcache', unconnected in block 'InstructionMemory', is tied to its initial value.
+    Found 32-bit adder for signal <n0012> created at line 141.
+    Found 32-bit adder for signal <n0014> created at line 142.
+    Found 32-bit adder for signal <n0016> created at line 143.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <MARcache>, simulation mismatch.
+    Found 65x8-bit dual-port Read Only RAM <Mram_MARcache> for signal <MARcache>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <InstructionMemory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 32x32-bit dual-port RAM                               : 2
+ 65x32-bit single-port RAM                             : 1
+ 65x8-bit dual-port Read Only RAM                      : 2
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 6
+ 32-bit subtractor                                     : 1
+# Registers                                            : 69
+ 1-bit register                                        : 49
+ 32-bit register                                       : 14
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+ 64-bit register                                       : 1
+ 96-bit register                                       : 1
+# Comparators                                          : 14
+ 32-bit comparator greater                             : 1
+ 5-bit comparator equal                                : 8
+ 6-bit comparator lessequal                            : 5
+# Multiplexers                                         : 241
+ 1-bit 2-to-1 multiplexer                              : 201
+ 32-bit 2-to-1 multiplexer                             : 39
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <EXMEM_64> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_65> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_66> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_67> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_68> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_69> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_70> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_71> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_72> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_73> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_74> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_75> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_76> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_77> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_78> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_79> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_80> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_81> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_82> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_83> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_84> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_32> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_33> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_34> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_35> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_36> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_37> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_38> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_39> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_40> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_41> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_42> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_43> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_44> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_45> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_46> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_47> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_48> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_49> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_50> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_51> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_52> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_0> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_1> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_2> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_3> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_4> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_5> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_6> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_7> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_8> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_9> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_10> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_11> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_12> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_13> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_14> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_15> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_16> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_17> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_18> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_19> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_20> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_21> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_22> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_23> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_24> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <EXMEM_instruction_25> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_0> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_1> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_2> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_3> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_4> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_5> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_6> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_7> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_8> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_9> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_10> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_11> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_12> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_13> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_14> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_15> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_16> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_17> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_18> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_19> of sequential type is unconnected in block <c>.
+WARNING:Xst:2677 - Node <MEMWB_instruction_20> of sequential type is unconnected in block <c>.
+
+Synthesizing (advanced) Unit <InstructionMemory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_MARcache> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Iaddr>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 65-word x 8-bit                     |          |
+    |     addrB          | connected to signal <n0012>         |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_MARcache1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0014>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 65-word x 8-bit                     |          |
+    |     addrB          | connected to signal <n0016>         |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <InstructionMemory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RegisterFile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_registers> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clc>           | fall     |
+    |     weA            | connected to signal <isWrite>       | high     |
+    |     addrA          | connected to signal <writeReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rj>            |          |
+    |     doB            | connected to signal <data1>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_registers1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clc>           | fall     |
+    |     weA            | connected to signal <isWrite>       | high     |
+    |     addrA          | connected to signal <writeReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <_n0022>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RegisterFile> synthesized (advanced).
+WARNING:Xst:2677 - Node <c/MEMWB_32> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_33> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_34> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_35> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_36> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_37> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_38> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_39> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_40> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_41> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_42> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_43> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_44> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_45> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_46> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_47> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_48> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_49> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_50> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_51> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_52> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_0> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_1> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_2> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_3> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_4> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_5> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_6> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_7> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_8> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_9> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_10> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_11> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_12> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_13> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_14> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_15> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_16> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_17> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_18> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_19> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/MEMWB_instruction_20> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_64> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_65> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_66> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_67> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_68> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_69> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_70> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_71> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_72> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_73> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_74> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_75> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_76> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_77> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_78> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_79> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_80> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_81> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_82> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_83> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_84> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_0> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_1> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_2> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_3> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_4> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_5> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_6> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_7> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_8> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_9> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_10> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_11> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_12> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_13> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_14> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_15> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_16> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_17> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_18> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_19> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_20> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_21> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_22> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_23> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_24> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/EXMEM_instruction_25> of sequential type is unconnected in block <WIN>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 32x32-bit dual-port distributed RAM                   : 2
+ 65x32-bit single-port distributed RAM                 : 1
+ 65x8-bit dual-port distributed Read Only RAM          : 2
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+ 7-bit adder                                           : 3
+# Registers                                            : 589
+ Flip-Flops                                            : 589
+# Comparators                                          : 14
+ 32-bit comparator greater                             : 1
+ 5-bit comparator equal                                : 8
+ 6-bit comparator lessequal                            : 5
+# Multiplexers                                         : 365
+ 1-bit 2-to-1 multiplexer                              : 329
+ 32-bit 2-to-1 multiplexer                             : 35
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <c/IFID_instruction_0> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_1> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_2> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_3> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_4> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_5> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_6> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_7> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_8> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_9> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IFID_instruction_10> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_16> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_17> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_18> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_19> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_20> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_21> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_22> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_23> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_24> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <c/IDEX_instruction_25> of sequential type is unconnected in block <WIN>.
+
+Optimizing unit <WIN> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1710 - FF/Latch <pc/currentPC_1> (without init value) has a constant value of 0 in block <WIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc/currentPC_0> (without init value) has a constant value of 0 in block <WIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pc/currentPC_31> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_30> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_29> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_28> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_27> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_26> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_25> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_24> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_23> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_22> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_21> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_20> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_19> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_18> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_17> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_16> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_15> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_14> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_13> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_12> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_11> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_10> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_9> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_8> of sequential type is unconnected in block <WIN>.
+WARNING:Xst:2677 - Node <pc/currentPC_7> of sequential type is unconnected in block <WIN>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block WIN, actual ratio is 12.
+FlipFlop IDEX_93 has been replicated 2 time(s)
+FlipFlop IDEX_94 has been replicated 2 time(s)
+FlipFlop IDEX_95 has been replicated 2 time(s)
+FlipFlop c/IDEX_instruction_27 has been replicated 1 time(s)
+FlipFlop c/IDEX_instruction_28 has been replicated 1 time(s)
+FlipFlop c/IDEX_instruction_29 has been replicated 1 time(s)
+FlipFlop c/IDEX_instruction_30 has been replicated 1 time(s)
+FlipFlop c/IDEX_instruction_31 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <WIN> :
+	Found 2-bit shift register for signal <c/IDEX_64>.
+	Found 2-bit shift register for signal <c/IDEX_65>.
+	Found 2-bit shift register for signal <c/IDEX_66>.
+	Found 2-bit shift register for signal <c/IDEX_67>.
+	Found 2-bit shift register for signal <c/IDEX_68>.
+Unit <WIN> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 542
+ Flip-Flops                                            : 542
+# Shift Registers                                      : 5
+ 2-bit shift register                                  : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : WIN.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 975
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 4
+#      LUT2                        : 38
+#      LUT3                        : 143
+#      LUT4                        : 199
+#      LUT5                        : 128
+#      LUT6                        : 287
+#      MUXCY                       : 86
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 74
+# FlipFlops/Latches                : 547
+#      FD                          : 197
+#      FD_1                        : 77
+#      FDE                         : 69
+#      FDE_1                       : 92
+#      FDRE                        : 5
+#      FDRE_1                      : 75
+#      FDS                         : 32
+# RAMS                             : 62
+#      RAM128X1D                   : 16
+#      RAM128X1S                   : 32
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
+# Shift Registers                  : 5
+#      SRLC16E                     : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 1
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             547  out of  18224     3%  
+ Number of Slice LUTs:                  988  out of   9112    10%  
+    Number used as Logic:               807  out of   9112     8%  
+    Number used as Memory:              181  out of   2176     8%  
+       Number used as RAM:              176
+       Number used as SRL:                5
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1117
+   Number with an unused Flip Flop:     570  out of   1117    51%  
+   Number with an unused LUT:           129  out of   1117    11%  
+   Number of fully used LUT-FF pairs:   418  out of   1117    37%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+clc                                | BUFGP                                   | 598   |
+N0                                 | NONE(c/instructionmemory/Mram_MARcache8)| 16    |
+-----------------------------------+-----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 12.323ns (Maximum Frequency: 81.146MHz)
+   Minimum input arrival time before clock: 3.290ns
+   Maximum output required time after clock: 11.262ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clc'
+  Clock period: 12.323ns (frequency: 81.146MHz)
+  Total number of paths / destination ports: 103155 / 1361
+-------------------------------------------------------------------------
+Delay:               6.162ns (Levels of Logic = 4)
+  Source:            IDEX_81 (FF)
+  Destination:       c/IDEX_ALUInputFirst_0 (FF)
+  Source Clock:      clc falling
+  Destination Clock: clc rising
+
+  Data Path: IDEX_81 to c/IDEX_ALUInputFirst_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.447   0.981  IDEX_81 (IDEX_81)
+     LUT6:I0->O            3   0.203   0.651  c/EXMEM[89]_IDEX[84]_equal_52_o5_SW0 (N11)
+     LUT5:I4->O            4   0.205   0.912  c/EXMEM[89]_IDEX[84]_equal_52_o5_1 (c/EXMEM[89]_IDEX[84]_equal_52_o5)
+     LUT6:I3->O            2   0.205   0.617  c/EXMEM[89]_EXMEM[89]_OR_161_o_3 (c/EXMEM[89]_EXMEM[89]_OR_161_o_2)
+     LUT2:I1->O           33   0.205   1.305  c/GND_7_o_EXMEM[89]_MUX_337_o1 (c/GND_7_o_EXMEM[89]_MUX_337_o)
+     FDS:S                     0.430          c/IDEX_ALUInputFirst_0
+    ----------------------------------------
+    Total                      6.162ns (1.695ns logic, 4.467ns route)
+                                       (27.5% logic, 72.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clc'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              3.290ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       pc/currentPC_6 (FF)
+  Destination Clock: clc rising
+
+  Data Path: reset to pc/currentPC_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.721  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            5   0.203   0.714  pc/Reset_OR_DriverANDClockEnable321 (pc/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.430          pc/currentPC_6
+    ----------------------------------------
+    Total                      3.290ns (1.855ns logic, 1.435ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clc'
+  Total number of paths / destination ports: 10751 / 3
+-------------------------------------------------------------------------
+Offset:              11.262ns (Levels of Logic = 11)
+  Source:            c/IDEX_instruction_30_1 (FF)
+  Destination:       zero (PAD)
+  Source Clock:      clc rising
+
+  Data Path: c/IDEX_instruction_30_1 to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  c/IDEX_instruction_30_1 (c/IDEX_instruction_30_1)
+     LUT5:I0->O           19   0.203   1.072  cu/ALUSrcB1_2 (cu/ALUSrcB1_1)
+     LUT4:I3->O            1   0.205   0.000  alu/Madd_A[31]_B[31]_add_0_OUT_lut<0> (alu/Madd_A[31]_B[31]_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu/Madd_A[31]_B[31]_add_0_OUT_cy<0> (alu/Madd_A[31]_B[31]_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Madd_A[31]_B[31]_add_0_OUT_cy<1> (alu/Madd_A[31]_B[31]_add_0_OUT_cy<1>)
+     XORCY:CI->O           1   0.180   0.580  alu/Madd_A[31]_B[31]_add_0_OUT_xor<2> (alu/A[31]_B[31]_add_0_OUT<2>)
+     LUT6:I5->O            1   0.205   0.580  alu/Mmux_result461 (alu/Mmux_result46)
+     LUT6:I5->O            2   0.205   0.845  alu/Mmux_result462 (result<2>)
+     LUT3:I0->O            1   0.205   0.684  alu/zero<31>1 (alu/zero<31>)
+     LUT6:I4->O            1   0.203   0.944  alu/zero<31>2 (alu/zero<31>1)
+     LUT6:I0->O            6   0.203   0.744  alu/zero<31>8 (zero_OBUF)
+     OBUF:I->O                 2.571          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     11.262ns (4.818ns logic, 6.444ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock N0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clc            |    1.518|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clc
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clc            |    9.227|    6.162|    5.567|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.76 secs
+ 
+--> 
+
+Total memory usage is 264748 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  235 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

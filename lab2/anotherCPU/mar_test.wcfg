@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ise project/anotherCPU/mar_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mar_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/mar_test/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mar_test/rs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mar_test/rt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mar_test/rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mar_test/immediate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immediate[15:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mar_test/IAddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IAddr[31:0]</obj_property>
+   </wvobject>
+</wave_config>

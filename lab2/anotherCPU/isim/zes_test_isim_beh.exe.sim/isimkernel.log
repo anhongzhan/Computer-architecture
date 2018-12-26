@@ -1,0 +1,28 @@
+Command line:
+   zes_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  8730
+
+Fri Nov 23 14:05:18 2018
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 1017.36 Meg
+
+ Total Signals          : 15
+ Total Nets             : 61
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 189
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 1332.51 Meg
+
+Fri Nov 23 14:06:04 2018
+

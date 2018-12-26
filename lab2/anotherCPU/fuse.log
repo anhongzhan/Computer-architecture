@@ -1,0 +1,30 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/ise project/anotherCPU/CPU_test_isim_beh.exe" -prj "F:/ise project/anotherCPU/CPU_test_beh.prj" "work.CPU_test" "work.glbl" 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/ise project/anotherCPU/CPU.v" into library work
+Analyzing Verilog file "F:/ise project/anotherCPU/CPU_test.v" into library work
+Analyzing Verilog file "F:/Xilinx/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 180172 KB
+Fuse CPU Usage: 389 ms
+Compiling module Caulator
+Compiling module NPC
+Compiling module PC
+Compiling module ZeroSignExtend
+Compiling module CU
+Compiling module RegisterFile
+Compiling module ALU
+Compiling module MDR
+Compiling module MAR
+Compiling module CPU
+Compiling module CPU_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable F:/ise project/anotherCPU/CPU_test_isim_beh.exe
+Fuse Memory Usage: 186508 KB
+Fuse CPU Usage: 625 ms
